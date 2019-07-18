@@ -745,11 +745,11 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@react-native-community/cli-platform-android@^2.0.1", "@react-native-community/cli-platform-android@^2.6.2":
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-android/-/cli-platform-android-2.6.2.tgz#4e7ce8784e6b4a3139c739ce15672c9c4007b9fb"
+"@react-native-community/cli-platform-android@^2.0.1", "@react-native-community/cli-platform-android@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-android/-/cli-platform-android-2.7.0.tgz#511d1db12c52d29cb87b6e4e84d63030ffa2c38d"
   dependencies:
-    "@react-native-community/cli-tools" "^2.4.1"
+    "@react-native-community/cli-tools" "^2.7.0"
     chalk "^2.4.2"
     execa "^1.0.0"
     jetifier "^1.6.2"
@@ -757,17 +757,17 @@
     slash "^2.0.0"
     xmldoc "^0.4.0"
 
-"@react-native-community/cli-platform-ios@^2.0.1", "@react-native-community/cli-platform-ios@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-ios/-/cli-platform-ios-2.4.1.tgz#99b38c6b3feecf061ecf1243fe41013f4112a51c"
+"@react-native-community/cli-platform-ios@^2.0.1", "@react-native-community/cli-platform-ios@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-ios/-/cli-platform-ios-2.7.0.tgz#a1e7af6141136da7a0b3f477426bea889a931a17"
   dependencies:
-    "@react-native-community/cli-tools" "^2.4.1"
+    "@react-native-community/cli-tools" "^2.7.0"
     chalk "^2.4.2"
     xcode "^2.0.0"
 
-"@react-native-community/cli-tools@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@react-native-community/cli-tools/-/cli-tools-2.4.1.tgz#5a23b92d0b486753add00a27d77d0ea9e8c331e1"
+"@react-native-community/cli-tools@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-tools/-/cli-tools-2.7.0.tgz#b468ce74cb5ebf5789731d4d330740801679cf81"
   dependencies:
     chalk "^2.4.2"
     lodash "^4.17.5"
@@ -775,13 +775,13 @@
     node-fetch "^2.5.0"
 
 "@react-native-community/cli@^2.0.1":
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/@react-native-community/cli/-/cli-2.6.2.tgz#b6bc86d4baafa51776304eff51f1162872f0da1e"
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli/-/cli-2.7.0.tgz#d392b6f6092c7fc8da05982f38bd626db4799a10"
   dependencies:
     "@hapi/joi" "^15.0.3"
-    "@react-native-community/cli-platform-android" "^2.6.2"
-    "@react-native-community/cli-platform-ios" "^2.4.1"
-    "@react-native-community/cli-tools" "^2.4.1"
+    "@react-native-community/cli-platform-android" "^2.7.0"
+    "@react-native-community/cli-platform-ios" "^2.7.0"
+    "@react-native-community/cli-tools" "^2.7.0"
     chalk "^2.4.2"
     commander "^2.19.0"
     compression "^1.7.1"
