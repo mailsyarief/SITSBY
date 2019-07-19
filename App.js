@@ -1,8 +1,9 @@
 import React from "react";
 import { FlatList } from "react-native";
 import axios from 'axios';
-import { Text, ListItem, Left, Body, Icon, Right, Title, Container, Content, Item, Input, List, Thumbnail, Spinner } from "native-base";
+import { Text, ListItem, Left, Body, Icon, Right, Title, Container, Content, Item, Input, List, Thumbnail, Spinner,Toast } from "native-base";
 import AppHeader from './component/layout/Header';
+
 
 
 class App extends React.Component {
@@ -10,13 +11,18 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      showToast: false,
       employees: []
     }
   }
 
+  onPressHandler(data){
+    console.log(data);
+  }
+
   componentDidMount(){
 
-    axios.get('http://7ea838cf.ngrok.io/sitsby/list.json')
+    axios.get('http://0d2e8692.ngrok.io/sitsby/list.json')
       .then(res => {
         const resData = res.data.data;
         // console.log(resData);
@@ -25,7 +31,7 @@ class App extends React.Component {
 
     if(this.state.employees.length > 0){
       return data = this.state.employees.map((employee) =>
-        <ListItem avatar key={employee.id}>
+        <ListItem avatar key={employee.id} onPress={() => this.onPressHandler(employee.name)}>
           <Left>
             <Thumbnail source={{ uri: 'https://mhcd.org/wp-content/uploads/2017/12/placeholder-man.png' }} />
           </Left>
@@ -34,11 +40,10 @@ class App extends React.Component {
             <Text note>{employee.email}</Text>
           </Body>
         </ListItem>
-
       );
     }else{
       return(
-          <Spinner color='blue' style={{margin:100}}/>
+          <Spinner color='blue' style={{marginTop:100}}/>
       )
     }
   }
