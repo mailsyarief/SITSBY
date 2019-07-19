@@ -31,7 +31,7 @@ class App extends React.Component {
           </Left>
           <Body>
             <Text>{employee.name}</Text>
-            <Text note>{employee.phone}</Text>
+            <Text note>{employee.email}</Text>
           </Body>
         </ListItem>
 
