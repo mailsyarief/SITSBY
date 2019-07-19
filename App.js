@@ -25,13 +25,13 @@ class App extends React.Component {
 
     if(this.state.employees.length > 0){
       return data = this.state.employees.map((employee) =>
-        <ListItem avatar key={employee.id}>
+        <ListItem avatar key={employee.id} onPress={console.log(employee.name)}>
           <Left>
             <Thumbnail source={{ uri: 'https://mhcd.org/wp-content/uploads/2017/12/placeholder-man.png' }} />
           </Left>
           <Body>
             <Text>{employee.name}</Text>
-            <Text note>{employee.phone}</Text>
+            <Text note>{employee.email}</Text>
           </Body>
         </ListItem>
 
