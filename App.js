@@ -22,7 +22,7 @@ class App extends React.Component {
 
   componentDidMount(){
 
-    axios.get('http://0d2e8692.ngrok.io/sitsby/list.json')
+    axios.get('http://10.0.2.2:2000/sitsby/list.json')
       .then(res => {
         const resData = res.data.data;
         // console.log(resData);
