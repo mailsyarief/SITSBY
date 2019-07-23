@@ -18,6 +18,7 @@ class HomePage extends React.Component {
 
   onPressHandler(data){
     console.log(data);
+    console.warn(data.name);
     this.props.navigation.navigate('DetailPage',{employee:data});
   }
 
